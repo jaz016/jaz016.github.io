@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Jazdesigns</title>
+
+
+
+	<!-- Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700|Roboto:400,700">
+	<!-- Bootstrap Grid System -->
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- PagePiling CSS-->
+	<link rel="stylesheet" href="css/jquery.pagepiling.min.css" />
+	<!-- Material Kit CSS-->
+	<link rel="stylesheet" href="vendor/material-kit-html/assets/css/material-kit.min.css" />
+	<!-- Animate CSS -->
+	<link rel="stylesheet" href="css/animate.css" />
+	<!-- FakeLoader CSS -->
+	<link rel="stylesheet" href="css/fakeLoader.css" />
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/style.css" />
+
+	
+
+	<!-- jQuery -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<!-- FakeLoader JS -->
+	<script src="js/fakeLoader.js"></script>
+	<!-- PagePiling JS -->
+	<script src="js/jquery.pagepiling.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			// Initialize FakeLoader
+			$('#fakeLoader').fakeLoader({
+				timeToHide: 1000,
+				zIndex:'999999',
+				spinner:'spinner3',
+				bgColor:'#3362ae'
+			});
+			$("#intro").addClass('loaded');
+
+			// Initialize pagePiling
+	    	$('#pagepiling').pagepiling();
+	    });
+    </script>
+
+</head>
+<body>
+
+	<div id="fakeLoader"></div>
+
+
+	
+	<!-- Sticky Header -->
+	<header>
+		<div class="container">
+
+			<!-- Site Title -->
+			<h1>jazdesigns</h1>
+
+			<!-- Header Menu -->
+			<nav>
+				<ul>
+					<li><a href="about_me.html">About Me</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="get_in_touch.html">Get in Touch</a></li>
+				</ul>
+				<ul id="social-links">
+					<li><img src="img/fb.png" alt="Facebook Link"><a href="#">Facebook</a></li>
+					<li><img src="img/linkedin.png" alt="LinkedIn Link"><a href="#">LinkedIn</a></li>
+					<li><img src="img/instagram.png" alt="Instagram Link"><a href="#">Instagram</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+
+
+	<div id="pagepiling">
+
+
+
+		<!-- Intro Section -->
+	    <div class="section" id="intro">
+	    	<div class="container">
+	    		<div class="row">
+	    			<!-- Intro Text -->
+	    			<div class="col-md-6">
+	    				<h1 class="text-bold text-shadowed">Hello,</h1>
+	    				<h2 class="text-bold text-shadowed">I am <span>@jazbautista</span> and I am a Full-Stack Web Developer.</h2>
+	    			</div>
+	    		</div>
+
+
+	    		<div id="get-started">
+	    			<a href="#">
+		    			<span>Get to know me</span>
+						<i class="animated infinite fadeInDown fa fa-angle-down"></i>
+					</a>
+	    		</div>
+	    	</div>
+	    </div>
+
+
+	    <!-- Services and Skills Section-->
+	    <div class="section" id="services">
+	    	<div class="container">
+				
+				<!-- Services Text -->
+				<div id="services-text" class="text-shadowed">
+	    			<h3 class="text-bold">What I do</h3>
+	    			<p>Jazdesigns mainly specialize in creating websites, web applications and systems. I strive for aesthetics in everything I do and I ensure that my code is of high quality, efficient and follows best practices. Whenever you need your idea converted to an actual web material, Jazdesigns got you covered.</p>
+	    		</div>
+
+
+              	<!-- Skills Area -->
+              	<div id="skills-area" class="container">
+
+
+ 					<!-- Skills Box -->
+              		<div class="card card-nav-tabs">
+              			<!-- Skills Area Header -->
+		                <div class="card-header card-header-warning">
+		                  <div class="nav-tabs-navigation">
+		                    <div class="nav-tabs-wrapper">
+		                      <ul class="nav nav-tabs" data-tabs="tabs">
+		                        <li class="nav-item">
+		                          <a class="nav-link active" href="#front-end" data-toggle="tab">
+		                            <img src="img/front-end.png" alt=""> Front-End
+		                          </a>
+		                        </li>
+		                        <li class="nav-item">
+		                          <a class="nav-link" href="#back-end" data-toggle="tab">
+		                            <img src="img/backend.png" alt=""> Back-End
+		                          </a>
+		                        </li>
+		                        <li class="nav-item">
+		                          <a class="nav-link" href="#cms" data-toggle="tab">
+		                            <img src="img/cms.png" alt=""> Content Management System
+		                          </a>
+		                        </li>
+		                        <li class="nav-item">
+		                          <a class="nav-link" href="#graphics" data-toggle="tab">
+		                            <img src="img/graphics.png" alt=""> Graphics
+		                          </a>
+		                        </li>
+		                      </ul>
+		                    </div>
+		                  </div>
+		                </div>
+
+		                <!-- Skills Area Body -->
+		                <div class="card-body">
+		                  <div class="tab-content">
+		                    <div class="tab-pane active" id="front-end">
+		                      <div class="container">
+		                      	<div class="row">
+		                      		<div class="col-md-6">
+		                      			<ul>
+		                      				<li><p><i class="fa fa-angle-right"></i> HTML5/CSS3</p></li>
+		                      				<li><p><i class="fa fa-angle-right"></i> JavaScript/jQuery</p></li>
+		                      				<li><p><i class="fa fa-angle-right"></i> SASS/SCSS</p></li>
+		                      			</ul>
+		                      		</div>
+		                      		<div class="col-md-6">
+		                      			<ul>
+		                      				<li><p><i class="fa fa-angle-right"></i> VueJS</p></li>
+		                      				<li><p><i class="fa fa-angle-right"></i> PSD (Photoshop) to HTML/CSS</p></li>
+		                      			</ul>
+		                      		</div>
+		                      	</div>
+		                      </div>
+		                    </div>
+		                    <div class="tab-pane" id="back-end">
+		                      <div class="container">
+		                      	<div class="row">
+		                      		<div class="col-md-6">
+		                      			<ul>
+		                      				<li><p><i class="fa fa-angle-right"></i> PHP (Procedural/OOP)</p></li>
+		                      				<li><p><i class="fa fa-angle-right"></i> MVC Design Pattern</p></li>
+		                      				<li><p><i class="fa fa-angle-right"></i> RDBMS (MySQL)</p></li>
+		                      			</ul>
+		                      		</div>
+		                      		<div class="col-md-6">
+		                      			<ul>
+		                      				<li><p><i class="fa fa-angle-right"></i> AJAX</p></li>
+		                      				<li><p><i class="fa fa-angle-right"></i> CodeIgniter</p></li>
+		                      				<li><p><i class="fa fa-angle-right"></i> Laravel</p></li>
+		                      			</ul>
+		                      		</div>
+		                      	</div>
+		                      </div>
+		                    </div>
+		                    <div class="tab-pane" id="cms">
+		                      <div class="container">
+		                      	<div class="row">
+		                      		<div class="col-md-6">
+		                      			<ul>
+		                      				<li><p><i class="fa fa-angle-right"></i> Custom WordPress Theme Development</p></li>
+		                      				<li><p><i class="fa fa-angle-right"></i> WP Plugin Creation</p></li>
+		                      				<li><p><i class="fa fa-angle-right"></i> WooCommerce Integration</p></li>		
+		                      			</ul>
+		                      		</div>
+		                      		<div class="col-md-6">
+		                      			<ul>
+		                      				<li><p><i class="fa fa-angle-right"></i> PSD (Photoshop) to WordPress</p></li>
+		                      			</ul>
+		                      		</div>
+		                      	</div>
+		                      </div>
+		                    </div>
+		                    <div class="tab-pane" id="graphics">
+		                      <div class="container">
+		                      	<div class="row">
+		                      		<div class="col-md-6">
+		                      			<ul>
+		                      				<li><p><i class="fa fa-angle-right"></i> Logo Creation</p></li>
+		                      				<li><p><i class="fa fa-angle-right"></i> Banner Design</p></li>
+		                      				<li><p><i class="fa fa-angle-right"></i> Flyer Design</p></li>
+		                      			</ul>
+		                      		</div>
+		                      		<div class="col-md-6">
+		                      			<ul>
+		                      				<li><p><i class="fa fa-angle-right"></i> Poster Design</p></li>
+		                      				<li><p><i class="fa fa-angle-right"></i> Brochure Design</p></li>
+		                      			</ul>
+		                      		</div>
+		                      	</div>
+		                      </div>
+		                    </div><!-- /tab-pane -->
+		                  </div><!-- /tab-content -->
+		                </div><!-- /card-body -->		                
+	              	</div><!-- /card -->
+              	</div><!-- /skills-area -->
+	    	</div>
+	    </div>
+
+
+
+
+		<!-- Assurance Section -->
+	    <div class="section" id="assurance">
+	    	<div class="container">
+
+
+	    		<!-- Assurance Text -->
+	    		<div id="assurance-text" class="text-shadowed">
+	    			<h4 class="text-bold">How I do it</h4>
+	    			<p>For every project I create or become a part of; you can assure me these qualities.</p>
+	    		</div>
+	    				
+	    			
+
+
+	    		<!-- Check Lists -->
+	    		<div class="row check-lists">
+	   				<div class="col-md-6">
+	   					<ul>
+	   						<li><i class="fa fa-check"></i> Highly optimized coding style</li>
+	   						<li><i class="fa fa-check"></i> Great attention to specifications</li>
+	   						<li><i class="fa fa-check"></i> Innovative</li>
+	   					</ul>
+	   				</div>
+	   				<div class="col-md-6">
+	   					<ul>
+	   						<li><i class="fa fa-check"></i> Strives for aesthetics</li>
+	   						<li><i class="fa fa-check"></i> Up-to-date with the latest technologies</li>
+	   						<li><i class="fa fa-check"></i> Passionate about the web</li>
+	   					</ul>
+	   				</div>
+	    		</div>
+	    	</div>
+	    </div>
+
+
+
+
+	    <!-- Portfolio Section -->
+	    <div class="section" id="portfolio">
+
+
+	    	<div class="container">
+	    		<h3>Take a peek at some of my work</h3>
+	    	</div>
+	    	
+	    		
+			<!-- Portfolio White-Box Area -->
+    		<div id="portfolio-area">
+    			<div class="container">
+    				<div class="row">
+
+
+    					<!-- Portfolio Info -->
+    					<div class="col-md-5">
+
+
+							<div id="portfolio-info">
+								<div id="portfolio-info-inner">
+
+
+									<!-- Title -->
+									<h4 id="portfolio-title" class="text-shadowed text-bold">Pro-Card Philippines</h4>
+
+
+									<!-- Metadata -->
+									<span class="metadata"><i class="fa fa-calendar"></i> Completion date: <strong>April 2018</strong></span>
+
+
+									<!-- Description -->
+    								<p>Pro-Card is a discount card program that lets you enjoy rebates on diverse list of establishments, be insured in a realistic insurance plan, and avail a handful of other benefits.</p>
+
+
+    								<!-- View button -->
+    								<div id="view-proj">
+    									<a href="#" class="btn btn-primary btn-sm">View this <i class="fa fa-angle-right"></i></a>
+    								</div>
+
+
+								</div>
+							</div>
+    					</div>
+
+    					<!-- Portfolio Image -->
+    					<div class="col-md-7">
+    						<img src="img/procard1.jpg" alt="" id="portfolio-img" class="responsive-img img-shadowed">
+    						<div id="portfolio-nav" class="clearfix">
+
+								<div class="prev">
+									<button type="button" class="prev"><i class="fa fa-angle-left"></i></button>
+									<span><strong class="text-bold">Previous:</strong> Online Faculty Evaluation</span>
+								</div>
+
+								<div class="next">
+									<span><strong class="text-bold">Next:</strong> Simple CMS</span>
+									<button type="button" class="next"><i class="fa fa-angle-right"></i></button>
+								</div>
+			    				
+			    				
+			    			</div>
+    					</div>
+    				</div>
+    			</div>  			
+    		</div>
+
+
+			<!-- View All Button -->
+    		<div id="view-all" class="text-center">
+    			<a href="#" class="btn btn-default">View all Projects</a>
+    		</div>
+	    </div>
+
+
+
+	    <!-- Call-to-action Section -->
+	    <div class="section text-center" id="hire-section">
+	    	<div class="container">
+	    		<h4 class="text-bold text-shadowed">Hire Jazdesigns today!</h4>
+	    		<a href="#" class="btn btn-warning">Hire</a>
+	    	</div>
+	    </div>
+	</div>
+
+
+
+	<!-- Material Kit Core JS Files -->
+	<script src="vendor/material-kit-html/assets/js/core/popper.min.js" type="text/javascript"></script>
+	<script src="vendor/material-kit-html/assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+	<script src="vendor/material-kit-html/assets/js/plugins/moment.min.js"></script>
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
+	<!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+	<script src="vendor/material-kit-html/assets/js/material-kit.min.js" type="text/javascript"></script>
+
+	<!-- Custom Script -->
+	<script src="js/script.js"></script>
+	
+
+</body>
+</html>
