@@ -439,6 +439,11 @@ header nav ul li {
 	text-align: right;
 }
 
+#portfolio-nav .prev span,
+#portfolio-nav .next span{
+	width: 90%;
+}
+
 #view-all a {
 	border-radius: 0 0 30px 30px;
     display: inline-block;
