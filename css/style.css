@@ -119,6 +119,10 @@ header h1 {
 
 }
 
+header #site-title a {
+	color :#fff;
+}
+
 header nav {
     float: right;
     margin-top: 20px;
