@@ -207,7 +207,11 @@
 
         const otherProjects = projects.filter(proj => proj.slug !== portfolioTitle);
         let otherProjectsHTML = '';
-        otherProjects.forEach(proj => {
+        otherProjects.forEach((proj, index) => {
+          if(index>2) {
+            return;
+          }
+
           otherProjectsHTML += `<div class="portfolio-item text-center ${proj.category} col-md-8 col-lg-4">
             <div class="item-inner responsive-img img-shadowed" style="background-image: url('${proj.imageUrl}')">
               <div class="overlay d-flex flex-column justify-content-center">
@@ -218,6 +222,8 @@
               </div>
             </div>
           </div>`
+
+          
         });
         $("#other-projects").html(otherProjectsHTML);
 

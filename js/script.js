@@ -71,7 +71,9 @@ $(function() {
 
 	function renderPortfolioItem() {
 		$.getJSON('data/data.json', {}, function(data) {
-			const projects = data.projects;
+			const projects = data.projects.map(proj => {
+				if(proj.category !== 'graphics') return proj;
+			});
 			const project = projects[projectIndex];
 	
 			// set portfolio for the elements
