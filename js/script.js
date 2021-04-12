@@ -14,22 +14,7 @@ $(function() {
 
 	
 	// load portfolio item for the homepage
-	$.getJSON('data/data.json', {}, function(data) {
-		const projects = data.projects;
-		const project = projects[projectIndex];
-
-		// set portfolio for the elements
-		$("#portfolio-title").html(project.title);
-		$("#portfolio-info .metadata strong").html(project.completionDate);
-		$("#portfolio-desc").html(project.description);
-		$("#portfolio-img").attr("src", project.imageUrl);
-
-
-		// set previous and next portfolio names
-		$('#portfolio-nav div.prev span').html(`<strong class="text-bold">Previous:</strong> ${projects[projectIndex-1].title}`);
-
-		$('#portfolio-nav div.next span').html(`<strong class="text-bold">Next:</strong> ${projects[projectIndex+1].title}`);
-	});
+	renderPortfolioItem()
 
 
 
@@ -68,43 +53,26 @@ $(function() {
 
 	$("#portfolio-nav div.prev span").on("click", function() {
 		const newProjectIndex = projectIndex-1;
-
-		$.getJSON('data/data.json', {}, function(data) {
-			projectIndex--;
-			const projects = data.projects;
-			const project = projects[newProjectIndex];
-	
-			// set portfolio for the elements
-			$("#portfolio-title").html(project.title);
-			$("#portfolio-info .metadata strong").html(project.completionDate);
-			$("#portfolio-desc").html(project.description);
-			$("#portfolio-img").attr("src", project.imageUrl);
-	
-
-
-			// set previous and next portfolio names
-			if(projects[projectIndex-1]) {
-				$('#portfolio-nav div.prev span').html(`<strong class="text-bold">Previous:</strong> ${projects[projectIndex-1].title}`);
-			} else {
-				$('#portfolio-nav div.prev span').html(`No more items to show`);
-			}
-			
-			if(projects[projectIndex+1]) {
-				$('#portfolio-nav div.next span').html(`<strong class="text-bold">Next:</strong> ${projects[projectIndex+1].title}`);
-			} else {
-				$('#portfolio-nav div.next span').html(`No more items to show`);
-			}
-		});
+		projectIndex--;
+		renderPortfolioItem();
 	});
 
 
 	$("#portfolio-nav div.next span").on("click", function() {
 		const newProjectIndex = projectIndex+1;
+		projectIndex++;
+		renderPortfolioItem();
+	});
 
+
+
+
+
+
+	function renderPortfolioItem() {
 		$.getJSON('data/data.json', {}, function(data) {
-			projectIndex++;
 			const projects = data.projects;
-			const project = projects[newProjectIndex];
+			const project = projects[projectIndex];
 	
 			// set portfolio for the elements
 			$("#portfolio-title").html(project.title);
@@ -112,7 +80,7 @@ $(function() {
 			$("#portfolio-desc").html(project.description);
 			$("#portfolio-img").attr("src", project.imageUrl);
 	
-
+	
 			// set previous and next portfolio names
 			if(projects[projectIndex-1]) {
 				$('#portfolio-nav div.prev span').html(`<strong class="text-bold">Previous:</strong> ${projects[projectIndex-1].title}`);
@@ -126,7 +94,7 @@ $(function() {
 				$('#portfolio-nav div.next span').html(`No more items to show`);
 			}
 		});
-	});
+	}
 
 
 });
