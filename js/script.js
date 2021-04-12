@@ -10,7 +10,7 @@ $(function() {
 	});
 
 
-	let projectIndex = 1;
+	let projectIndex = 0;
 
 	
 	// load portfolio item for the homepage
@@ -79,6 +79,7 @@ $(function() {
 			$("#portfolio-info .metadata strong").html(project.completionDate);
 			$("#portfolio-desc").html(project.description);
 			$("#portfolio-img").attr("src", project.imageUrl);
+			$("#view-proj a").attr("href","single.html?title="+project.slug);
 	
 	
 			// set previous and next portfolio names

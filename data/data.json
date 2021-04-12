@@ -6,8 +6,10 @@
 			"category": "website",
 			"imageUrl": "uploads/procard1.JPG",
 			"completionDate": "April 2018",
+			"technologies": ["WordPress Development","Theme Customization","Analytics"],
 			"description": "Pro-Card is a discount card program that lets you enjoy rebates on diverse list of establishments, be insured in a realistic insurance plan, and avail a handful of other benefits.",
-			"otherImageUrls" : []
+			"otherImageUrls" : [],
+			"tags": ["Informational","Directory","Membership website"]
 		},
 		{
 			"title": "Faculty Evaluation and Student Grading System",
@@ -15,17 +17,21 @@
 			"category": "web-app",
 			"imageUrl": "uploads/fesgs1.JPG",
 			"completionDate": "April 2018",
+			"technologies": ["Custom App Development","Database Schema design"],
 			"description": "A web-based faculty evaluation and student grading system. Includes features like evaluation schedules, scores; grading criteria for college and senior high school; as well as general school admin functions",
-			"otherImageUrls" : []
+			"otherImageUrls" : [],
+			"tags": ["Web application"]
 		},
 		{
 			"title": "Simple CMS",
 			"slug": "simple-cms",
 			"category": "web-app",
 			"imageUrl": "uploads/scms1.JPG",
+			"technologies": ["Custom App Development"],
 			"completionDate": "2018",
 			"description": "Content management system based from Modern Business HTML template. Powered by Object-Oriented PHP. You can create blog posts, portfolio items, slider images, categories, etc",
-			"otherImageUrls" : []
+			"otherImageUrls" : [],
+			"tags": ["CMS Template","Web Application"]
 		}
 	]
 }
