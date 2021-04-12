@@ -4,6 +4,13 @@ $(function() {
 	'use strict';
 
 
+	// scroll down upon click 'Get to know me'
+	$("#get-started a").on("click", function() {
+		$.fn.pagepiling.moveSectionDown();
+	});
+
+
+
 	// show portfolio name when hovered on portfolio-nav
 	$('#portfolio-nav div.prev').on("mouseover", function() {
 		var $portfolioName = $(this).find('span');

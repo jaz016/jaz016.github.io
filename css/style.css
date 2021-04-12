@@ -159,10 +159,6 @@ header nav ul li {
 	height: 30px;
 }
 
-#social-links li a {
-	display: none;
-}
-
 
 /* PagePiling Nav (override) */
 #pp-nav {
