@@ -12,6 +12,17 @@
 			"tags": ["Informational","Directory","Membership website"]
 		},
 		{
+			"title": "Simple Social Media",
+			"slug": "simple-social-media",
+			"category": "web-app",
+			"imageUrl": "uploads/sss.jpg",
+			"completionDate": "April 2021",
+			"technologies": ["Custom App Development","Back-end programming"],
+			"description": "Simple Social Media allows you to post statuses real-time similar with most social media platforms. Powered by Node.js, Socket.io, and MongoDB",
+			"otherImageUrls" : [],
+			"tags": ["Social Media","RESTful API App","Real-time Web App"]
+		},
+		{
 			"title": "Faculty Evaluation and Student Grading System",
 			"slug": "faculty-evaluation-and-student-grading-system",
 			"category": "web-app",
