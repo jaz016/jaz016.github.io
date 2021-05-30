@@ -1,6 +1,17 @@
 {
 	"projects" : [
 		{
+			"title": "COVID Tracker",
+			"slug": "covid-tracker",
+			"category": "web-app",
+			"imageUrl": "uploads/covid-tracker2.PNG",
+			"completionDate": "May 2021",
+			"technologies": ["Custom App Development"],
+			"description": "This application shows the live data for COVID-19 cases for the world and per country basis. Filter through countries to see data for each on both new and all-time cases. Utilizes the React framework",
+			"otherImageUrls" : [],
+			"tags": ["Single Page Application","RESTful API app","Informational"]
+		},
+		{
 			"title": "Pro-Card Philippines",
 			"slug": "pro-card-philippines",
 			"category": "website",
