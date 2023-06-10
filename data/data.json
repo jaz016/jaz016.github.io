@@ -87,6 +87,17 @@
 			"description": "A mockup for the supposed website of West Atlantic Hotel",
 			"otherImageUrls" : [],
 			"tags": ["Website UI Mockup"]
+		},
+		{
+			"title": "React Budgets",
+			"slug": "react-budgets",
+			"category": "web-app",
+			"imageUrl": "uploads/react-budgets.JPG",
+			"technologies": ["Custom App Development"],
+			"completionDate": "June 2023",
+			"description": "A budget tracking app made from React. This app lets you log your expenses, set your budgets (daily, weekly, monthly), manage categories, search and filter transactions, and keep track of your overall spendings.",
+			"otherImageUrls" : [],
+			"tags": ["Web Application", "Single Page Application"]
 		}
 	]
 }
